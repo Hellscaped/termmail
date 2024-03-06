@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "termmail"
+version = "0.1.0"
+description = "Email client for the terminal."
+authors = ["Hellscaped <tappsyo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+easymail = "^0.3.0"
+requests2 = "^2.16.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+termmail = 'termmail:run'
